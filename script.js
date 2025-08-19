@@ -28,11 +28,13 @@ form.addEventListener('submit', (e) => {
         totalCost += (totalCost * 0.1)
     }
 
-    const totalCostTTC = totalCost * 1.2
+    const totalCostTVA = totalCost * 0.2
+    const totalCostTTC = totalCost + totalCostTVA
 
     resultDiv.innerHTML =
         `<h3>Résultat Simulation</h3>
-               <p>Montant HT: ${totalCost.toFixed(2)}€</p>
-               <p>Montant TTC: ${totalCostTTC.toFixed(2)}€</p>
+               <p>Montant HT : ${totalCost.toFixed(2)}€</p>
+               <p>TVA (20%) : ${totalCostTVA.toFixed(2)}€</p>
+               <p>Montant TTC : ${totalCostTTC.toFixed(2)}€</p>
               `
 })
