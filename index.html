@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Bureau Tout Propre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Mon Bureau Tout Propre</h1>
+
+    <div id="simulator">
+      <form id="simulator-form">
+        <h2>Simulateur de nettoyage</h2>
+        <label for="simulator-surface">Surface des bureaux à nettoyer (saisie en m²) :</label>
+        <input type="number" id="simulator-surface" name="surface" required>
+
+        <label for="simulator-frequency">Fréquence du nettoyage :</label>
+        <select id="simulator-frequency" name="frequency" required>
+          <option value="" disabled selected>Selectionner la frequence</option>
+          <option value="daily">Tous les jours</option>
+          <option value="weekly">Une fois par semaine</option>
+          <option value="weekly-2">Deux fois par semaine</option>
+        </select>
+
+        <div class="simulation-checkbox">
+          <label for="simulator-windows">Vitres incluses :</label>
+          <input type="checkbox" id="simulator-windows" name="windows">
+        </div>
+
+        <button type="submit">Simuler</button>
+      </form>
+
+      <div id="simulation-result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
