@@ -1,7 +1,7 @@
-# Mon Bureau Tout Propre est un outil simple permettant de simuler un bureau bien rangé.
+# Mon Bureau Tout Propre
 
 ## Contexte
-Ce projet est un outil simple permettant de simuler un bureau propre.
+Ce projet est un outil simple permettant de faire une simulation pour utiliser les services de Mon Bureau Tout Propre.
 
 ## Technologie
 - HTML
